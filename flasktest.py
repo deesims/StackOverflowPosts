@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-from stackapi import StackAPI
 import requests
 
 app = Flask('Stack Overflow OAuth')
-SITE = StackAPI('stackoverflow')
 
 @app.route('/result', methods=['POST', 'GET'])
 def result():
